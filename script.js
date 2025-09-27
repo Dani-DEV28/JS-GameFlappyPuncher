@@ -13,7 +13,7 @@ document.addEventListener("keydown", (e) => {
 
         jumpInterval = setInterval(() => {
             if (jumpHeight < 100) {
-                jumpHeight += 2;
+                jumpHeight += 4;
                 player.style.bottom = `${100 + jumpHeight}px`;
             } else {
                 clearInterval(jumpInterval);
